@@ -1,0 +1,317 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tester Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h2 class="text-center text-warning mb-4">Soil Tester Input</h2>
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Farmer Name</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+             <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" name="phone" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Location (City)</label>
+                <input type="text" class="form-control" name="location" required>
+            </div>
+
+             Existing soil parameters 
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Nitrogen (N)</label>
+                    <input type="number" class="form-control" name="N" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Phosphorus (P)</label>
+                    <input type="number" class="form-control" name="P" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Potassium (K)</label>
+                    <input type="number" class="form-control" name="K" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">pH Level</label>
+                    <input type="number" step="0.1" class="form-control" name="ph" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Temperature (°C)</label>
+                    <input type="number" step="0.1" class="form-control" name="temperature" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Humidity (%)</label>
+                    <input type="number" step="0.1" class="form-control" name="humidity" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Rainfall (mm)</label>
+                    <input type="number" step="0.1" class="form-control" name="rainfall" required>
+                </div>
+            </div>
+
+            New enhancement inputs 
+            <div class="mb-3">
+                <label class="form-label">Soil Type</label>
+                <select class="form-select" name="soil_type" required>
+                    <option value="select-option">Choose Soil Type</option>
+                    <option value="Red">Red</option>
+                    <option value="Black">Black</option>
+                    <option value="Alluvial">Alluvial</option>
+                    <option value="Laterite">Laterite</option>
+                    <option value="Mixed">Mixed</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Water Level</label>
+                <select class="form-select" name="water_level" required>
+                    <option value="select-option">Enter Water Level</option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Season</label>
+                <select class="form-select" name="season" required>
+                    <option value="Select-option">Select Season</option>
+                    <option value="Kharif">Kharif</option>
+                    <option value="Rabi">Rabi</option>
+                    <option value="Zaid">Zaid</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Fertilizer Required?</label>
+                <select class="form-select" name="fertilizer" required>
+                    <option value="Select-option">Select Option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Pest Present?</label>
+                <select class="form-select" name="pest" required>
+                    <option value="Select-option">Select Option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Submit Soil Report</button>
+        </form>
+    </div>
+</div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soil Tester Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('/static/agriculture-field-grain-5980.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 20px;
+    }
+
+    /* Overlay for readability */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 80, 0, 0.5);
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 25px;
+      padding: 40px 30px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    h2 {
+      text-align: center;
+      color: #f9a825;
+      font-weight: 600;
+      margin-bottom: 30px;
+      animation: slideDown 1s ease;
+    }
+
+    label {
+      font-weight: 500;
+      color: #2e7d32;
+    }
+
+    .form-control, .form-select {
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-control:focus, .form-select:focus {
+      transform: scale(1.02);
+      box-shadow: 0 5px 15px rgba(46,125,50,0.3);
+    }
+
+    .btn-primary {
+      border-radius: 50px;
+      font-weight: 600;
+      padding: 12px;
+      font-size: 1.1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(46,125,50,0.5);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    /* Optional crop icon animation */
+    .crop-icon {
+      width: 80px;
+      display: block;
+      margin: 0 auto 20px auto;
+      animation: bounce 1.2s infinite alternate;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0);}
+      to { transform: translateY(-10px);}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <h2>🧪 Soil Tester Input</h2>
+
+    <form method="post">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label>Farmer Name</label>
+          <input type="text" class="form-control" name="name" placeholder="Farmer Name" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Phone Number</label>
+          <input type="tel" class="form-control" name="phone" placeholder="0123-456-789" required>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Location (City)</label>
+          <input type="text" class="form-control" name="location" placeholder="e.g Bengaluru" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <label>Nitrogen (N)</label>
+          <input type="number" class="form-control" name="N" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label>Phosphorus (P)</label>
+          <input type="number" class="form-control" name="P" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label>Potassium (K)</label>
+          <input type="number" class="form-control" name="K" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label>pH Level</label>
+          <input type="number" step="0.1" class="form-control" name="ph" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label>Soil Type</label>
+          <select class="form-select" name="soil_type" required>
+            <option value="">Choose Soil Type</option>
+            <option value="Red">Red</option>
+            <option value="Black">Black</option>
+            <option value="Alluvial">Alluvial</option>
+            <option value="Laterite">Laterite</option>
+            <option value="Mixed">Mixed</option>
+          </select>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Water Requirement</label>
+          <select class="form-select" name="water_level" required>
+            <option value="">Enter Water Level</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label>Season</label>
+          <select class="form-select" name="season" required>
+            <option value="">Select Season</option>
+            <option value="Kharif">Kharif</option>
+            <option value="Rabi">Rabi</option>
+            <option value="Zaid">Zaid</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label>Fertilizer Required?</label>
+          <select class="form-select" name="fertilizer" required>
+            <option value="">Select Option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>Pest Present?</label>
+          <select class="form-select" name="pest" required>
+            <option value="">Select Option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Submit Soil Report</button>
+    </form>
+  </div>
+</body>
+</html>

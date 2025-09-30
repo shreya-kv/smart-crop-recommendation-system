@@ -1,0 +1,192 @@
+<!-- farmer.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <div class="card shadow p-4">
+        <h2 class="text-center text-primary mb-4">Farmer Crop Request</h2>
+        <form method="post">
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+             <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" name="phone" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Location (City)</label>
+                <input type="text" class="form-control" name="location" required>
+            </div>
+             <div class="mb-3">
+            <label class="form-label">Preferred Language</label>
+            <select class="form-select" name="language" required>
+            <option value="en">Select a Language</option>
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>             Hindi 
+            <option value="kn">ಕನ್ನಡ</option>           Kannada 
+            <option value="ta">தமிழ்</option>           Tamil 
+            <option value="te">తెలుగు</option>           Telugu 
+            <option value="bn">বাংলা</option>             Bengali 
+            <option value="ml">മലയാളം</option>        Malayalam 
+            <option value="mr">मराठी</option>             Marathi 
+            <option value="gu">ગુજરાતી</option>           Gujarati 
+            <option value="pa">ਪੰਜਾਬੀ</option>            Punjabi 
+            </select>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Get Crop Suggestion</button>
+        </form>
+         <div class="text-center mt-3">
+            <a href="/" class="btn btn-secondary">Back to Home</a>
+        </div>
+    </div>
+</div>
+</body>
+</html> -->
+
+
+
+
+<!-- farmer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Crop Request</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('/static/agriculture-field-grain-5980.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Dark overlay for better readability */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 80, 0, 0.5);
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 100%;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    h2 {
+      color: #2e7d32;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+      animation: slideDown 1s ease;
+    }
+
+    .form-control, .form-select {
+      border-radius: 10px;
+      padding: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-control:focus, .form-select:focus {
+      transform: scale(1.02);
+      box-shadow: 0 5px 15px rgba(0,128,0,0.3);
+    }
+
+    .btn-success {
+      border-radius: 50px;
+      font-weight: 600;
+      padding: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-success:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,128,0,0.4);
+    }
+
+    .btn-secondary {
+      border-radius: 50px;
+      padding: 10px 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>🌾 Farmer Crop Request</h2>
+    <form method="post">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" name="phone" placeholder="123-456-7890" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Location (City)</label>
+        <input type="text" class="form-control" name="location" placeholder="e.g. Bengaluru" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Preferred Language</label>
+        <select class="form-select" name="language" required>
+          <option value="" disabled selected>Select a Language</option>
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="kn">ಕನ್ನಡ</option>
+          <option value="ta">தமிழ்</option>
+          <option value="te">తెలుగు</option>
+          <option value="bn">বাংলা</option>
+          <option value="ml">മലയാളം</option>
+          <option value="mr">मराठी</option>
+          <option value="gu">ગુજરાતી</option>
+          <option value="pa">ਪੰਜਾਬੀ</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-success w-100 mb-3">Get Crop Suggestion</button>
+      <div class="text-center">
+        <a href="/" class="btn btn-primary me-2">⬅ Back to Home</a>
+        <a href="/feedback" class="btn btn-success" style="background-color:black">💬 Give Feedback</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

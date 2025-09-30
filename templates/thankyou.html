@@ -1,0 +1,146 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Received</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+        <div class="card shadow p-4 text-center">
+            <h2 class="text-success mb-3">✅ Thank you for your submission!</h2>
+            <p>Your request has been recorded successfully.</p>
+            <div class="text-center mt-4">
+        
+                Back to Home 
+        <a href="/" class="btn btn-secondary me-2">Back to Home</a>
+
+        
+         View Report form 
+        <form action="/farmer_report" method="POST" style="display:inline;">
+            <input type="hidden" name="name" value="{{ name }}">
+            <input type="hidden" name="phone" value="{{ phone}}">
+            <input type="hidden" name="location" value="{{ location }}">
+            <input type="hidden" name="language" value="{{ language}}">
+            <a href="{{ url_for('result', name=name, phone=phone, location=location, language=language) }}" 
+            class="btn btn-primary">
+            View Your Result
+            </a>
+        </form>
+    </div>
+
+    </div>
+</div>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submission Received</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('/static/agriculture-field-grain-5980.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    /* Overlay for better readability */
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 80, 0, 0.5);
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 50px 30px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    h2 {
+      color: #2e7d32;
+      font-weight: 600;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease;
+    }
+
+    p {
+      color: #444;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .btn {
+      border-radius: 50px;
+      font-weight: 600;
+      padding: 12px 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,128,0,0.4);
+    }
+
+    .btn-secondary:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transform: translateY(-2px);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0;}
+      to { opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>🌱 Submission Received!</h2>
+    <p>Your request has been recorded successfully. We will provide crop recommendations shortly.</p>
+
+    <div>
+      <!-- Back to Home -->
+      <a href="/" class="btn btn-primary me-2">⬅ Back to Home</a>
+
+      <!-- View Result -->
+      <a href="{{ url_for('result', name=name, phone=phone, location=location, language=language) }}" 
+         class="btn btn-success">View Your Result</a>
+    </div>
+  </div>
+</body>
+</html>

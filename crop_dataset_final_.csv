@@ -1,0 +1,566 @@
+crop,season,N_category,P_category,K_category,water_requirement,root_depth,soil_type,temp_C,rainfall_mm,humidity_pct,ph,temp_range,rainfall_range,humidity_range,ph_range
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay,23.75,1250.0,75.0,5.875,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay,25.625,1375.0,77.5,6.062,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay,27.5,1500.0,80.0,6.25,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay,29.375,1625.0,82.5,6.438,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay,31.25,1750.0,85.0,6.625,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,23.75,1250.0,75.0,5.875,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,25.625,1375.0,77.5,6.062,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,27.5,1500.0,80.0,6.25,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,29.375,1625.0,82.5,6.438,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,31.25,1750.0,85.0,6.625,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,23.75,1250.0,75.0,5.875,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,25.625,1375.0,77.5,6.062,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,27.5,1500.0,80.0,6.25,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,29.375,1625.0,82.5,6.438,27.5,1500.0,80.0,6.25
+rice,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,31.25,1750.0,85.0,6.625,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay,23.75,1250.0,75.0,5.875,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay,25.625,1375.0,77.5,6.062,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay,27.5,1500.0,80.0,6.25,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay,29.375,1625.0,82.5,6.438,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay,31.25,1750.0,85.0,6.625,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay loam,23.75,1250.0,75.0,5.875,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay loam,25.625,1375.0,77.5,6.062,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay loam,27.5,1500.0,80.0,6.25,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay loam,29.375,1625.0,82.5,6.438,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Clay loam,31.25,1750.0,85.0,6.625,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Alluvial,23.75,1250.0,75.0,5.875,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Alluvial,25.625,1375.0,77.5,6.062,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Alluvial,27.5,1500.0,80.0,6.25,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Alluvial,29.375,1625.0,82.5,6.438,27.5,1500.0,80.0,6.25
+rice,Rabi,Medium,Medium,Medium,High,Medium,Alluvial,31.25,1750.0,85.0,6.625,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay,23.75,1250.0,75.0,5.875,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay,25.625,1375.0,77.5,6.062,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay,27.5,1500.0,80.0,6.25,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay,29.375,1625.0,82.5,6.438,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay,31.25,1750.0,85.0,6.625,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay loam,23.75,1250.0,75.0,5.875,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay loam,25.625,1375.0,77.5,6.062,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay loam,27.5,1500.0,80.0,6.25,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay loam,29.375,1625.0,82.5,6.438,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Clay loam,31.25,1750.0,85.0,6.625,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Alluvial,23.75,1250.0,75.0,5.875,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Alluvial,25.625,1375.0,77.5,6.062,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Alluvial,27.5,1500.0,80.0,6.25,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Alluvial,29.375,1625.0,82.5,6.438,27.5,1500.0,80.0,6.25
+rice,Summer,Medium,Medium,Medium,High,Medium,Alluvial,31.25,1750.0,85.0,6.625,27.5,1500.0,80.0,6.25
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,13.75,450.0,47.5,6.375,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,15.625,525.0,51.25,6.562,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,17.5,600.0,55.0,6.75,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,19.375,675.0,58.75,6.938,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,21.25,750.0,62.5,7.125,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Clay loam,13.75,450.0,47.5,6.375,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Clay loam,15.625,525.0,51.25,6.562,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Clay loam,17.5,600.0,55.0,6.75,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Clay loam,19.375,675.0,58.75,6.938,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Clay loam,21.25,750.0,62.5,7.125,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Alluvial,13.75,450.0,47.5,6.375,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Alluvial,15.625,525.0,51.25,6.562,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Alluvial,17.5,600.0,55.0,6.75,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Alluvial,19.375,675.0,58.75,6.938,17.5,600.0,55.0,6.75
+wheat,Rabi,Medium,Medium,Medium,Medium,Medium,Alluvial,21.25,750.0,62.5,7.125,17.5,600.0,55.0,6.75
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,21.0,625.0,57.5,6.0,24.0,750.0,65.0,6.5
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,22.5,687.5,61.25,6.25,24.0,750.0,65.0,6.5
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,24.0,750.0,65.0,6.5,24.0,750.0,65.0,6.5
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.5,812.5,68.75,6.75,24.0,750.0,65.0,6.5
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,27.0,875.0,72.5,7.0,24.0,750.0,65.0,6.5
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,21.0,625.0,57.5,6.0,24.0,750.0,65.0,6.5
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,22.5,687.5,61.25,6.25,24.0,750.0,65.0,6.5
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,24.0,750.0,65.0,6.5,24.0,750.0,65.0,6.5
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,25.5,812.5,68.75,6.75,24.0,750.0,65.0,6.5
+maize,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,27.0,875.0,72.5,7.0,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,21.0,625.0,57.5,6.0,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,22.5,687.5,61.25,6.25,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,24.0,750.0,65.0,6.5,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.5,812.5,68.75,6.75,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,27.0,875.0,72.5,7.0,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,21.0,625.0,57.5,6.0,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,22.5,687.5,61.25,6.25,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,24.0,750.0,65.0,6.5,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,25.5,812.5,68.75,6.75,24.0,750.0,65.0,6.5
+maize,Rabi,Medium,Medium,Medium,Medium,Medium,Loamy,27.0,875.0,72.5,7.0,24.0,750.0,65.0,6.5
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Well-drained loamy,11.5,400.0,46.25,6.375,15.0,500.0,52.5,6.75
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Well-drained loamy,13.25,450.0,49.375,6.562,15.0,500.0,52.5,6.75
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Well-drained loamy,15.0,500.0,52.5,6.75,15.0,500.0,52.5,6.75
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Well-drained loamy,16.75,550.0,55.625,6.938,15.0,500.0,52.5,6.75
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Well-drained loamy,18.5,600.0,58.75,7.125,15.0,500.0,52.5,6.75
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Light alluvial,11.5,400.0,46.25,6.375,15.0,500.0,52.5,6.75
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Light alluvial,13.25,450.0,49.375,6.562,15.0,500.0,52.5,6.75
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Light alluvial,15.0,500.0,52.5,6.75,15.0,500.0,52.5,6.75
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Light alluvial,16.75,550.0,55.625,6.938,15.0,500.0,52.5,6.75
+barley,Rabi,Medium,Medium,Medium,Low,Medium,Light alluvial,18.5,600.0,58.75,7.125,15.0,500.0,52.5,6.75
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Light sandy loam,26.75,325.0,37.5,6.0,29.5,450.0,45.0,6.5
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Light sandy loam,28.125,387.5,41.25,6.25,29.5,450.0,45.0,6.5
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Light sandy loam,29.5,450.0,45.0,6.5,29.5,450.0,45.0,6.5
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Light sandy loam,30.875,512.5,48.75,6.75,29.5,450.0,45.0,6.5
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Light sandy loam,32.25,575.0,52.5,7.0,29.5,450.0,45.0,6.5
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Alluvial,26.75,325.0,37.5,6.0,29.5,450.0,45.0,6.5
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Alluvial,28.125,387.5,41.25,6.25,29.5,450.0,45.0,6.5
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Alluvial,29.5,450.0,45.0,6.5,29.5,450.0,45.0,6.5
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Alluvial,30.875,512.5,48.75,6.75,29.5,450.0,45.0,6.5
+bajra,Kharif,Medium,Medium,Medium,Low,Medium,Alluvial,32.25,575.0,52.5,7.0,29.5,450.0,45.0,6.5
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,23.75,450.0,40.0,6.125,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.625,525.0,45.0,6.438,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,27.5,600.0,50.0,6.75,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,29.375,675.0,55.0,7.062,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,31.25,750.0,60.0,7.375,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,23.75,450.0,40.0,6.125,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,25.625,525.0,45.0,6.438,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,27.5,600.0,50.0,6.75,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,29.375,675.0,55.0,7.062,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,31.25,750.0,60.0,7.375,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,23.75,450.0,40.0,6.125,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,25.625,525.0,45.0,6.438,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,27.5,600.0,50.0,6.75,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,29.375,675.0,55.0,7.062,27.5,600.0,50.0,6.75
+sorghum,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,31.25,750.0,60.0,7.375,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,23.75,450.0,40.0,6.125,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.625,525.0,45.0,6.438,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,27.5,600.0,50.0,6.75,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,29.375,675.0,55.0,7.062,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,31.25,750.0,60.0,7.375,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Red soil,23.75,450.0,40.0,6.125,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Red soil,25.625,525.0,45.0,6.438,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Red soil,27.5,600.0,50.0,6.75,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Red soil,29.375,675.0,55.0,7.062,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Red soil,31.25,750.0,60.0,7.375,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Black soil,23.75,450.0,40.0,6.125,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Black soil,25.625,525.0,45.0,6.438,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Black soil,27.5,600.0,50.0,6.75,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Black soil,29.375,675.0,55.0,7.062,27.5,600.0,50.0,6.75
+sorghum,Rabi,Medium,Medium,Medium,Medium,Medium,Black soil,31.25,750.0,60.0,7.375,27.5,600.0,50.0,6.75
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,14.25,400.0,37.5,6.5,18.5,500.0,45.0,7.0
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,16.375,450.0,41.25,6.75,18.5,500.0,45.0,7.0
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,18.5,500.0,45.0,7.0,18.5,500.0,45.0,7.0
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,20.625,550.0,48.75,7.25,18.5,500.0,45.0,7.0
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,22.75,600.0,52.5,7.5,18.5,500.0,45.0,7.0
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Light loam,14.25,400.0,37.5,6.5,18.5,500.0,45.0,7.0
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Light loam,16.375,450.0,41.25,6.75,18.5,500.0,45.0,7.0
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Light loam,18.5,500.0,45.0,7.0,18.5,500.0,45.0,7.0
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Light loam,20.625,550.0,48.75,7.25,18.5,500.0,45.0,7.0
+chickpea,Rabi,Medium,Medium,Medium,Low,Medium,Light loam,22.75,600.0,52.5,7.5,18.5,500.0,45.0,7.0
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,23.75,675.0,48.75,6.0,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.625,762.5,53.125,6.25,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,27.5,850.0,57.5,6.5,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,29.375,937.5,61.875,6.75,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,31.25,1025.0,66.25,7.0,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,23.75,675.0,48.75,6.0,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,25.625,762.5,53.125,6.25,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,27.5,850.0,57.5,6.5,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,29.375,937.5,61.875,6.75,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,31.25,1025.0,66.25,7.0,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Alluvial,23.75,675.0,48.75,6.0,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Alluvial,25.625,762.5,53.125,6.25,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Alluvial,27.5,850.0,57.5,6.5,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Alluvial,29.375,937.5,61.875,6.75,27.5,850.0,57.5,6.5
+pigeonpea,Kharif,Medium,Medium,Medium,Medium,Medium,Alluvial,31.25,1025.0,66.25,7.0,27.5,850.0,57.5,6.5
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.25,450.0,50.0,6.375,28.5,600.0,60.0,6.75
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,26.875,525.0,55.0,6.562,28.5,600.0,60.0,6.75
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,28.5,600.0,60.0,6.75,28.5,600.0,60.0,6.75
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,30.125,675.0,65.0,6.938,28.5,600.0,60.0,6.75
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,31.75,750.0,70.0,7.125,28.5,600.0,60.0,6.75
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Loam,25.25,450.0,50.0,6.375,28.5,600.0,60.0,6.75
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Loam,26.875,525.0,55.0,6.562,28.5,600.0,60.0,6.75
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Loam,28.5,600.0,60.0,6.75,28.5,600.0,60.0,6.75
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Loam,30.125,675.0,65.0,6.938,28.5,600.0,60.0,6.75
+blackgram,Kharif,Medium,Medium,Medium,Medium,Medium,Loam,31.75,750.0,70.0,7.125,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.25,450.0,50.0,6.375,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,26.875,525.0,55.0,6.562,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,28.5,600.0,60.0,6.75,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,30.125,675.0,65.0,6.938,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,31.75,750.0,70.0,7.125,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Loam,25.25,450.0,50.0,6.375,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Loam,26.875,525.0,55.0,6.562,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Loam,28.5,600.0,60.0,6.75,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Loam,30.125,675.0,65.0,6.938,28.5,600.0,60.0,6.75
+blackgram,Rabi,Medium,Medium,Medium,Medium,Medium,Loam,31.75,750.0,70.0,7.125,28.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,23.75,450.0,50.0,6.375,27.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.625,525.0,55.0,6.562,27.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,27.5,600.0,60.0,6.75,27.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,29.375,675.0,65.0,6.938,27.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,31.25,750.0,70.0,7.125,27.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Light loam,23.75,450.0,50.0,6.375,27.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Light loam,25.625,525.0,55.0,6.562,27.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Light loam,27.5,600.0,60.0,6.75,27.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Light loam,29.375,675.0,65.0,6.938,27.5,600.0,60.0,6.75
+mungbean,Kharif,Medium,Medium,Medium,Medium,Medium,Light loam,31.25,750.0,70.0,7.125,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,23.75,450.0,50.0,6.375,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.625,525.0,55.0,6.562,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,27.5,600.0,60.0,6.75,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,29.375,675.0,65.0,6.938,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Sandy loam,31.25,750.0,70.0,7.125,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Light loam,23.75,450.0,50.0,6.375,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Light loam,25.625,525.0,55.0,6.562,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Light loam,27.5,600.0,60.0,6.75,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Light loam,29.375,675.0,65.0,6.938,27.5,600.0,60.0,6.75
+mungbean,Rabi,Medium,Medium,Medium,Medium,Medium,Light loam,31.25,750.0,70.0,7.125,27.5,600.0,60.0,6.75
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Loam,13.75,400.0,37.5,6.5,17.5,500.0,45.0,7.0
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Loam,15.625,450.0,41.25,6.75,17.5,500.0,45.0,7.0
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Loam,17.5,500.0,45.0,7.0,17.5,500.0,45.0,7.0
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Loam,19.375,550.0,48.75,7.25,17.5,500.0,45.0,7.0
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Loam,21.25,600.0,52.5,7.5,17.5,500.0,45.0,7.0
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,13.75,400.0,37.5,6.5,17.5,500.0,45.0,7.0
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,15.625,450.0,41.25,6.75,17.5,500.0,45.0,7.0
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,17.5,500.0,45.0,7.0,17.5,500.0,45.0,7.0
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,19.375,550.0,48.75,7.25,17.5,500.0,45.0,7.0
+lentil,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,21.25,600.0,52.5,7.5,17.5,500.0,45.0,7.0
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,23.75,625.0,58.75,5.875,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,25.625,687.5,63.125,6.062,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,27.5,750.0,67.5,6.25,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,29.375,812.5,71.875,6.438,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Sandy loam,31.25,875.0,76.25,6.625,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,23.75,625.0,58.75,5.875,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,25.625,687.5,63.125,6.062,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,27.5,750.0,67.5,6.25,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,29.375,812.5,71.875,6.438,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Red soil,31.25,875.0,76.25,6.625,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Well-drained,23.75,625.0,58.75,5.875,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Well-drained,25.625,687.5,63.125,6.062,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Well-drained,27.5,750.0,67.5,6.25,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Well-drained,29.375,812.5,71.875,6.438,27.5,750.0,67.5,6.25
+groundnut,Kharif,Medium,Medium,Medium,Medium,Medium,Well-drained,31.25,875.0,76.25,6.625,27.5,750.0,67.5,6.25
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,23.0,625.0,57.5,6.375,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,24.5,687.5,61.25,6.562,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,26.0,750.0,65.0,6.75,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,27.5,812.5,68.75,6.938,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,29.0,875.0,72.5,7.125,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Clay loam,23.0,625.0,57.5,6.375,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Clay loam,24.5,687.5,61.25,6.562,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Clay loam,26.0,750.0,65.0,6.75,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Clay loam,27.5,812.5,68.75,6.938,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Clay loam,29.0,875.0,72.5,7.125,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,23.0,625.0,57.5,6.375,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,24.5,687.5,61.25,6.562,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,26.0,750.0,65.0,6.75,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,27.5,812.5,68.75,6.938,26.0,750.0,65.0,6.75
+soybean,Kharif,Medium,Medium,Medium,Medium,Medium,Black soil,29.0,875.0,72.5,7.125,26.0,750.0,65.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,13.75,400.0,47.5,6.375,17.5,500.0,55.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,15.625,450.0,51.25,6.562,17.5,500.0,55.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,17.5,500.0,55.0,6.75,17.5,500.0,55.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,19.375,550.0,58.75,6.938,17.5,500.0,55.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,21.25,600.0,62.5,7.125,17.5,500.0,55.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,13.75,400.0,47.5,6.375,17.5,500.0,55.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,15.625,450.0,51.25,6.562,17.5,500.0,55.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,17.5,500.0,55.0,6.75,17.5,500.0,55.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,19.375,550.0,58.75,6.938,17.5,500.0,55.0,6.75
+mustard,Rabi,Medium,Medium,Medium,Low,Medium,Clay loam,21.25,600.0,62.5,7.125,17.5,500.0,55.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,22.5,425.0,40.0,6.375,25.0,550.0,50.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,23.75,487.5,45.0,6.562,25.0,550.0,50.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,25.0,550.0,50.0,6.75,25.0,550.0,50.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,26.25,612.5,55.0,6.938,25.0,550.0,50.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,27.5,675.0,60.0,7.125,25.0,550.0,50.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,22.5,425.0,40.0,6.375,25.0,550.0,50.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,23.75,487.5,45.0,6.562,25.0,550.0,50.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,25.0,550.0,50.0,6.75,25.0,550.0,50.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,26.25,612.5,55.0,6.938,25.0,550.0,50.0,6.75
+sunflower,Rabi,Medium,Medium,Medium,Low,Medium,Loamy,27.5,675.0,60.0,7.125,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,22.5,425.0,40.0,6.375,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,23.75,487.5,45.0,6.562,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,25.0,550.0,50.0,6.75,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,26.25,612.5,55.0,6.938,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,27.5,675.0,60.0,7.125,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Loamy,22.5,425.0,40.0,6.375,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Loamy,23.75,487.5,45.0,6.562,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Loamy,25.0,550.0,50.0,6.75,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Loamy,26.25,612.5,55.0,6.938,25.0,550.0,50.0,6.75
+sunflower,Kharif,Medium,Medium,Medium,Low,Medium,Loamy,27.5,675.0,60.0,7.125,25.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,27.5,425.0,40.0,6.375,30.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,28.75,487.5,45.0,6.562,30.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,30.0,550.0,50.0,6.75,30.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,31.25,612.5,55.0,6.938,30.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Sandy loam,32.5,675.0,60.0,7.125,30.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Loam,27.5,425.0,40.0,6.375,30.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Loam,28.75,487.5,45.0,6.562,30.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Loam,30.0,550.0,50.0,6.75,30.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Loam,31.25,612.5,55.0,6.938,30.0,550.0,50.0,6.75
+sesame,Kharif,Medium,Medium,Medium,Low,Medium,Loam,32.5,675.0,60.0,7.125,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,27.5,425.0,40.0,6.375,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,28.75,487.5,45.0,6.562,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,30.0,550.0,50.0,6.75,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,31.25,612.5,55.0,6.938,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Sandy loam,32.5,675.0,60.0,7.125,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Loam,27.5,425.0,40.0,6.375,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Loam,28.75,487.5,45.0,6.562,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Loam,30.0,550.0,50.0,6.75,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Loam,31.25,612.5,55.0,6.938,30.0,550.0,50.0,6.75
+sesame,Rabi,Medium,Medium,Medium,Low,Medium,Loam,32.5,675.0,60.0,7.125,30.0,550.0,50.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Deep loam,23.0,1250.0,67.5,6.375,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Deep loam,24.5,1375.0,71.25,6.562,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Deep loam,26.0,1500.0,75.0,6.75,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Deep loam,27.5,1625.0,78.75,6.938,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Deep loam,29.0,1750.0,82.5,7.125,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Alluvial,23.0,1250.0,67.5,6.375,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Alluvial,24.5,1375.0,71.25,6.562,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Alluvial,26.0,1500.0,75.0,6.75,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Alluvial,27.5,1625.0,78.75,6.938,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Alluvial,29.0,1750.0,82.5,7.125,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Black soil,23.0,1250.0,67.5,6.375,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Black soil,24.5,1375.0,71.25,6.562,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Black soil,26.0,1500.0,75.0,6.75,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Black soil,27.5,1625.0,78.75,6.938,26.0,1500.0,75.0,6.75
+sugarcane,Kharif,Medium,Medium,Medium,High,Deep,Black soil,29.0,1750.0,82.5,7.125,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Deep loam,23.0,1250.0,67.5,6.375,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Deep loam,24.5,1375.0,71.25,6.562,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Deep loam,26.0,1500.0,75.0,6.75,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Deep loam,27.5,1625.0,78.75,6.938,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Deep loam,29.0,1750.0,82.5,7.125,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Alluvial,23.0,1250.0,67.5,6.375,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Alluvial,24.5,1375.0,71.25,6.562,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Alluvial,26.0,1500.0,75.0,6.75,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Alluvial,27.5,1625.0,78.75,6.938,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Alluvial,29.0,1750.0,82.5,7.125,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Black soil,23.0,1250.0,67.5,6.375,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Black soil,24.5,1375.0,71.25,6.562,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Black soil,26.0,1500.0,75.0,6.75,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Black soil,27.5,1625.0,78.75,6.938,26.0,1500.0,75.0,6.75
+sugarcane,Rabi,Medium,Medium,Medium,High,Deep,Black soil,29.0,1750.0,82.5,7.125,26.0,1500.0,75.0,6.75
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Black cotton soil,23.75,675.0,50.0,6.0,27.5,850.0,60.0,6.5
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Black cotton soil,25.625,762.5,55.0,6.25,27.5,850.0,60.0,6.5
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Black cotton soil,27.5,850.0,60.0,6.5,27.5,850.0,60.0,6.5
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Black cotton soil,29.375,937.5,65.0,6.75,27.5,850.0,60.0,6.5
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Black cotton soil,31.25,1025.0,70.0,7.0,27.5,850.0,60.0,6.5
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,23.75,675.0,50.0,6.0,27.5,850.0,60.0,6.5
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,25.625,762.5,55.0,6.25,27.5,850.0,60.0,6.5
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,27.5,850.0,60.0,6.5,27.5,850.0,60.0,6.5
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,29.375,937.5,65.0,6.75,27.5,850.0,60.0,6.5
+cotton,Kharif,Medium,Medium,Medium,Medium,Medium,Loamy,31.25,1025.0,70.0,7.0,27.5,850.0,60.0,6.5
+jute,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,23.75,1750.0,75.0,5.825,27.5,2000.0,80.0,6.15
+jute,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,25.625,1875.0,77.5,5.988,27.5,2000.0,80.0,6.15
+jute,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,27.5,2000.0,80.0,6.15,27.5,2000.0,80.0,6.15
+jute,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,29.375,2125.0,82.5,6.312,27.5,2000.0,80.0,6.15
+jute,Kharif,Medium,Medium,Medium,High,Medium,Alluvial,31.25,2250.0,85.0,6.475,27.5,2000.0,80.0,6.15
+jute,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,23.75,1750.0,75.0,5.825,27.5,2000.0,80.0,6.15
+jute,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,25.625,1875.0,77.5,5.988,27.5,2000.0,80.0,6.15
+jute,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,27.5,2000.0,80.0,6.15,27.5,2000.0,80.0,6.15
+jute,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,29.375,2125.0,82.5,6.312,27.5,2000.0,80.0,6.15
+jute,Kharif,Medium,Medium,Medium,High,Medium,Clay loam,31.25,2250.0,85.0,6.475,27.5,2000.0,80.0,6.15
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Loamy,18.75,1525.0,67.5,5.375,22.5,1850.0,75.0,5.75
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Loamy,20.625,1687.5,71.25,5.562,22.5,1850.0,75.0,5.75
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Loamy,22.5,1850.0,75.0,5.75,22.5,1850.0,75.0,5.75
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Loamy,24.375,2012.5,78.75,5.938,22.5,1850.0,75.0,5.75
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Loamy,26.25,2175.0,82.5,6.125,22.5,1850.0,75.0,5.75
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Lateritic,18.75,1525.0,67.5,5.375,22.5,1850.0,75.0,5.75
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Lateritic,20.625,1687.5,71.25,5.562,22.5,1850.0,75.0,5.75
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Lateritic,22.5,1850.0,75.0,5.75,22.5,1850.0,75.0,5.75
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Lateritic,24.375,2012.5,78.75,5.938,22.5,1850.0,75.0,5.75
+coffee,Year-round,Medium,Medium,Medium,High,Deep,Lateritic,26.25,2175.0,82.5,6.125,22.5,1850.0,75.0,5.75
+banana,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,23.75,1375.0,75.0,5.875,27.5,1750.0,80.0,6.25
+banana,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,25.625,1562.5,77.5,6.062,27.5,1750.0,80.0,6.25
+banana,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,27.5,1750.0,80.0,6.25,27.5,1750.0,80.0,6.25
+banana,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,29.375,1937.5,82.5,6.438,27.5,1750.0,80.0,6.25
+banana,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,31.25,2125.0,85.0,6.625,27.5,1750.0,80.0,6.25
+banana,Year-round,Medium,Medium,Medium,High,Deep,Loamy,23.75,1375.0,75.0,5.875,27.5,1750.0,80.0,6.25
+banana,Year-round,Medium,Medium,Medium,High,Deep,Loamy,25.625,1562.5,77.5,6.062,27.5,1750.0,80.0,6.25
+banana,Year-round,Medium,Medium,Medium,High,Deep,Loamy,27.5,1750.0,80.0,6.25,27.5,1750.0,80.0,6.25
+banana,Year-round,Medium,Medium,Medium,High,Deep,Loamy,29.375,1937.5,82.5,6.438,27.5,1750.0,80.0,6.25
+banana,Year-round,Medium,Medium,Medium,High,Deep,Loamy,31.25,2125.0,85.0,6.625,27.5,1750.0,80.0,6.25
+mango,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,26.75,1062.5,58.75,6.0,29.5,1375.0,67.5,6.5
+mango,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,28.125,1218.75,63.125,6.25,29.5,1375.0,67.5,6.5
+mango,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,29.5,1375.0,67.5,6.5,29.5,1375.0,67.5,6.5
+mango,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,30.875,1531.25,71.875,6.75,29.5,1375.0,67.5,6.5
+mango,Year-round,Medium,Medium,Medium,High,Deep,Alluvial,32.25,1687.5,76.25,7.0,29.5,1375.0,67.5,6.5
+mango,Year-round,Medium,Medium,Medium,High,Deep,Loamy,26.75,1062.5,58.75,6.0,29.5,1375.0,67.5,6.5
+mango,Year-round,Medium,Medium,Medium,High,Deep,Loamy,28.125,1218.75,63.125,6.25,29.5,1375.0,67.5,6.5
+mango,Year-round,Medium,Medium,Medium,High,Deep,Loamy,29.5,1375.0,67.5,6.5,29.5,1375.0,67.5,6.5
+mango,Year-round,Medium,Medium,Medium,High,Deep,Loamy,30.875,1531.25,71.875,6.75,29.5,1375.0,67.5,6.5
+mango,Year-round,Medium,Medium,Medium,High,Deep,Loamy,32.25,1687.5,76.25,7.0,29.5,1375.0,67.5,6.5
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Deep loamy,20.0,425.0,40.0,6.375,25.0,550.0,50.0,6.75
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Deep loamy,22.5,487.5,45.0,6.562,25.0,550.0,50.0,6.75
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Deep loamy,25.0,550.0,50.0,6.75,25.0,550.0,50.0,6.75
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Deep loamy,27.5,612.5,55.0,6.938,25.0,550.0,50.0,6.75
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Deep loamy,30.0,675.0,60.0,7.125,25.0,550.0,50.0,6.75
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Sandy loam,20.0,425.0,40.0,6.375,25.0,550.0,50.0,6.75
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Sandy loam,22.5,487.5,45.0,6.562,25.0,550.0,50.0,6.75
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Sandy loam,25.0,550.0,50.0,6.75,25.0,550.0,50.0,6.75
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Sandy loam,27.5,612.5,55.0,6.938,25.0,550.0,50.0,6.75
+pomegranate,Rabi,Medium,Medium,Medium,Low,Deep,Sandy loam,30.0,675.0,60.0,7.125,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Deep loamy,20.0,425.0,40.0,6.375,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Deep loamy,22.5,487.5,45.0,6.562,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Deep loamy,25.0,550.0,50.0,6.75,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Deep loamy,27.5,612.5,55.0,6.938,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Deep loamy,30.0,675.0,60.0,7.125,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Sandy loam,20.0,425.0,40.0,6.375,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Sandy loam,22.5,487.5,45.0,6.562,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Sandy loam,25.0,550.0,50.0,6.75,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Sandy loam,27.5,612.5,55.0,6.938,25.0,550.0,50.0,6.75
+pomegranate,Kharif,Medium,Medium,Medium,Low,Deep,Sandy loam,30.0,675.0,60.0,7.125,25.0,550.0,50.0,6.75
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Sandy loam,23.75,1250.0,67.5,5.875,27.5,1500.0,75.0,6.25
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Sandy loam,25.625,1375.0,71.25,6.062,27.5,1500.0,75.0,6.25
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Sandy loam,27.5,1500.0,75.0,6.25,27.5,1500.0,75.0,6.25
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Sandy loam,29.375,1625.0,78.75,6.438,27.5,1500.0,75.0,6.25
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Sandy loam,31.25,1750.0,82.5,6.625,27.5,1500.0,75.0,6.25
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Loamy,23.75,1250.0,67.5,5.875,27.5,1500.0,75.0,6.25
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Loamy,25.625,1375.0,71.25,6.062,27.5,1500.0,75.0,6.25
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Loamy,27.5,1500.0,75.0,6.25,27.5,1500.0,75.0,6.25
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Loamy,29.375,1625.0,78.75,6.438,27.5,1500.0,75.0,6.25
+papaya,Year-round,Medium,Medium,Medium,High,Deep,Loamy,31.25,1750.0,82.5,6.625,27.5,1500.0,75.0,6.25
+potato,Rabi,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,13.75,425.0,66.25,5.375,17.5,550.0,72.5,5.75
+potato,Rabi,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,15.625,487.5,69.375,5.562,17.5,550.0,72.5,5.75
+potato,Rabi,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,17.5,550.0,72.5,5.75,17.5,550.0,72.5,5.75
+potato,Rabi,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,19.375,612.5,75.625,5.938,17.5,550.0,72.5,5.75
+potato,Rabi,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,21.25,675.0,78.75,6.125,17.5,550.0,72.5,5.75
+potato,Kharif,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,13.75,425.0,66.25,5.375,17.5,550.0,72.5,5.75
+potato,Kharif,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,15.625,487.5,69.375,5.562,17.5,550.0,72.5,5.75
+potato,Kharif,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,17.5,550.0,72.5,5.75,17.5,550.0,72.5,5.75
+potato,Kharif,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,19.375,612.5,75.625,5.938,17.5,550.0,72.5,5.75
+potato,Kharif,Medium,Medium,Medium,Low,Deep,Well-drained sandy loam,21.25,675.0,78.75,6.125,17.5,550.0,72.5,5.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Loamy,15.0,425.0,57.5,6.375,20.0,550.0,65.0,6.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Loamy,17.5,487.5,61.25,6.562,20.0,550.0,65.0,6.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Loamy,20.0,550.0,65.0,6.75,20.0,550.0,65.0,6.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Loamy,22.5,612.5,68.75,6.938,20.0,550.0,65.0,6.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Loamy,25.0,675.0,72.5,7.125,20.0,550.0,65.0,6.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Sandy loam,15.0,425.0,57.5,6.375,20.0,550.0,65.0,6.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Sandy loam,17.5,487.5,61.25,6.562,20.0,550.0,65.0,6.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Sandy loam,20.0,550.0,65.0,6.75,20.0,550.0,65.0,6.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Sandy loam,22.5,612.5,68.75,6.938,20.0,550.0,65.0,6.75
+onion,Rabi,Medium,Medium,Medium,Low,Shallow,Sandy loam,25.0,675.0,72.5,7.125,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Loamy,15.0,425.0,57.5,6.375,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Loamy,17.5,487.5,61.25,6.562,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Loamy,20.0,550.0,65.0,6.75,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Loamy,22.5,612.5,68.75,6.938,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Loamy,25.0,675.0,72.5,7.125,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Sandy loam,15.0,425.0,57.5,6.375,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Sandy loam,17.5,487.5,61.25,6.562,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Sandy loam,20.0,550.0,65.0,6.75,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Sandy loam,22.5,612.5,68.75,6.938,20.0,550.0,65.0,6.75
+onion,Kharif,Medium,Medium,Medium,Low,Shallow,Sandy loam,25.0,675.0,72.5,7.125,20.0,550.0,65.0,6.75
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,21.0,550.0,58.75,6.0,24.0,700.0,67.5,6.5
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,22.5,625.0,63.125,6.25,24.0,700.0,67.5,6.5
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,24.0,700.0,67.5,6.5,24.0,700.0,67.5,6.5
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,25.5,775.0,71.875,6.75,24.0,700.0,67.5,6.5
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,27.0,850.0,76.25,7.0,24.0,700.0,67.5,6.5
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,21.0,550.0,58.75,6.0,24.0,700.0,67.5,6.5
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,22.5,625.0,63.125,6.25,24.0,700.0,67.5,6.5
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,24.0,700.0,67.5,6.5,24.0,700.0,67.5,6.5
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,25.5,775.0,71.875,6.75,24.0,700.0,67.5,6.5
+tomato,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,27.0,850.0,76.25,7.0,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,21.0,550.0,58.75,6.0,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,22.5,625.0,63.125,6.25,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,24.0,700.0,67.5,6.5,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,25.5,775.0,71.875,6.75,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,27.0,850.0,76.25,7.0,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,21.0,550.0,58.75,6.0,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,22.5,625.0,63.125,6.25,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,24.0,700.0,67.5,6.5,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,25.5,775.0,71.875,6.75,24.0,700.0,67.5,6.5
+tomato,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,27.0,850.0,76.25,7.0,24.0,700.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,22.5,600.0,58.75,6.0,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,23.75,700.0,63.125,6.25,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,25.0,800.0,67.5,6.5,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,26.25,900.0,71.875,6.75,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,27.5,1000.0,76.25,7.0,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Clay loam,22.5,600.0,58.75,6.0,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Clay loam,23.75,700.0,63.125,6.25,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Clay loam,25.0,800.0,67.5,6.5,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Clay loam,26.25,900.0,71.875,6.75,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Clay loam,27.5,1000.0,76.25,7.0,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,22.5,600.0,58.75,6.0,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,23.75,700.0,63.125,6.25,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,25.0,800.0,67.5,6.5,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,26.25,900.0,71.875,6.75,25.0,800.0,67.5,6.5
+brinjal,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,27.5,1000.0,76.25,7.0,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,22.5,600.0,58.75,6.0,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,23.75,700.0,63.125,6.25,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,25.0,800.0,67.5,6.5,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,26.25,900.0,71.875,6.75,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,27.5,1000.0,76.25,7.0,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Clay loam,22.5,600.0,58.75,6.0,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Clay loam,23.75,700.0,63.125,6.25,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Clay loam,25.0,800.0,67.5,6.5,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Clay loam,26.25,900.0,71.875,6.75,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Clay loam,27.5,1000.0,76.25,7.0,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,22.5,600.0,58.75,6.0,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,23.75,700.0,63.125,6.25,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,25.0,800.0,67.5,6.5,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,26.25,900.0,71.875,6.75,25.0,800.0,67.5,6.5
+brinjal,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,27.5,1000.0,76.25,7.0,25.0,800.0,67.5,6.5
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,23.75,600.0,58.75,6.375,27.5,800.0,67.5,6.75
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,25.625,700.0,63.125,6.562,27.5,800.0,67.5,6.75
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,27.5,800.0,67.5,6.75,27.5,800.0,67.5,6.75
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,29.375,900.0,71.875,6.938,27.5,800.0,67.5,6.75
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,31.25,1000.0,76.25,7.125,27.5,800.0,67.5,6.75
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,23.75,600.0,58.75,6.375,27.5,800.0,67.5,6.75
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,25.625,700.0,63.125,6.562,27.5,800.0,67.5,6.75
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,27.5,800.0,67.5,6.75,27.5,800.0,67.5,6.75
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,29.375,900.0,71.875,6.938,27.5,800.0,67.5,6.75
+okra,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,31.25,1000.0,76.25,7.125,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,23.75,600.0,58.75,6.375,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,25.625,700.0,63.125,6.562,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,27.5,800.0,67.5,6.75,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,29.375,900.0,71.875,6.938,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,31.25,1000.0,76.25,7.125,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,23.75,600.0,58.75,6.375,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,25.625,700.0,63.125,6.562,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,27.5,800.0,67.5,6.75,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,29.375,900.0,71.875,6.938,27.5,800.0,67.5,6.75
+okra,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,31.25,1000.0,76.25,7.125,27.5,800.0,67.5,6.75
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,23.0,675.0,58.75,6.0,26.0,850.0,67.5,6.5
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,24.5,762.5,63.125,6.25,26.0,850.0,67.5,6.5
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,26.0,850.0,67.5,6.5,26.0,850.0,67.5,6.5
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,27.5,937.5,71.875,6.75,26.0,850.0,67.5,6.5
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,29.0,1025.0,76.25,7.0,26.0,850.0,67.5,6.5
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,23.0,675.0,58.75,6.0,26.0,850.0,67.5,6.5
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,24.5,762.5,63.125,6.25,26.0,850.0,67.5,6.5
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,26.0,850.0,67.5,6.5,26.0,850.0,67.5,6.5
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,27.5,937.5,71.875,6.75,26.0,850.0,67.5,6.5
+chilli,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,29.0,1025.0,76.25,7.0,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,23.0,675.0,58.75,6.0,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,24.5,762.5,63.125,6.25,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,26.0,850.0,67.5,6.5,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,27.5,937.5,71.875,6.75,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,29.0,1025.0,76.25,7.0,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,23.0,675.0,58.75,6.0,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,24.5,762.5,63.125,6.25,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,26.0,850.0,67.5,6.5,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,27.5,937.5,71.875,6.75,26.0,850.0,67.5,6.5
+chilli,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,29.0,1025.0,76.25,7.0,26.0,850.0,67.5,6.5
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Loam,13.75,525.0,66.25,6.375,17.5,650.0,72.5,6.75
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Loam,15.625,587.5,69.375,6.562,17.5,650.0,72.5,6.75
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Loam,17.5,650.0,72.5,6.75,17.5,650.0,72.5,6.75
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Loam,19.375,712.5,75.625,6.938,17.5,650.0,72.5,6.75
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Loam,21.25,775.0,78.75,7.125,17.5,650.0,72.5,6.75
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,13.75,525.0,66.25,6.375,17.5,650.0,72.5,6.75
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,15.625,587.5,69.375,6.562,17.5,650.0,72.5,6.75
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,17.5,650.0,72.5,6.75,17.5,650.0,72.5,6.75
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,19.375,712.5,75.625,6.938,17.5,650.0,72.5,6.75
+cabbage,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,21.25,775.0,78.75,7.125,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Loam,13.75,525.0,66.25,6.375,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Loam,15.625,587.5,69.375,6.562,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Loam,17.5,650.0,72.5,6.75,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Loam,19.375,712.5,75.625,6.938,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Loam,21.25,775.0,78.75,7.125,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,13.75,525.0,66.25,6.375,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,15.625,587.5,69.375,6.562,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,17.5,650.0,72.5,6.75,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,19.375,712.5,75.625,6.938,17.5,650.0,72.5,6.75
+cabbage,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,21.25,775.0,78.75,7.125,17.5,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,13.0,525.0,66.25,6.375,16.0,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,14.5,587.5,69.375,6.562,16.0,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,16.0,650.0,72.5,6.75,16.0,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,17.5,712.5,75.625,6.938,16.0,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,19.0,775.0,78.75,7.125,16.0,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,13.0,525.0,66.25,6.375,16.0,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,14.5,587.5,69.375,6.562,16.0,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,16.0,650.0,72.5,6.75,16.0,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,17.5,712.5,75.625,6.938,16.0,650.0,72.5,6.75
+cauliflower,Rabi,Medium,Medium,Medium,Medium,Shallow,Sandy loam,19.0,775.0,78.75,7.125,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,13.0,525.0,66.25,6.375,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,14.5,587.5,69.375,6.562,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,16.0,650.0,72.5,6.75,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,17.5,712.5,75.625,6.938,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,19.0,775.0,78.75,7.125,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,13.0,525.0,66.25,6.375,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,14.5,587.5,69.375,6.562,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,16.0,650.0,72.5,6.75,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,17.5,712.5,75.625,6.938,16.0,650.0,72.5,6.75
+cauliflower,Kharif,Medium,Medium,Medium,Medium,Shallow,Sandy loam,19.0,775.0,78.75,7.125,16.0,650.0,72.5,6.75
+spinach,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,13.75,525.0,67.5,6.375,17.5,650.0,75.0,6.75
+spinach,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,15.625,587.5,71.25,6.562,17.5,650.0,75.0,6.75
+spinach,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,17.5,650.0,75.0,6.75,17.5,650.0,75.0,6.75
+spinach,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,19.375,712.5,78.75,6.938,17.5,650.0,75.0,6.75
+spinach,Rabi,Medium,Medium,Medium,Medium,Shallow,Loamy,21.25,775.0,82.5,7.125,17.5,650.0,75.0,6.75
+spinach,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,13.75,525.0,67.5,6.375,17.5,650.0,75.0,6.75
+spinach,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,15.625,587.5,71.25,6.562,17.5,650.0,75.0,6.75
+spinach,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,17.5,650.0,75.0,6.75,17.5,650.0,75.0,6.75
+spinach,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,19.375,712.5,78.75,6.938,17.5,650.0,75.0,6.75
+spinach,Kharif,Medium,Medium,Medium,Medium,Shallow,Loamy,21.25,775.0,82.5,7.125,17.5,650.0,75.0,6.75
