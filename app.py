@@ -609,17 +609,15 @@
 
 
 
-from flask import Flask, request, render_template, redirect, url_for
-import os, csv
-import joblib
+from flask import Flask, request, render_template, redirect, url_for, session
+import os, csv, joblib, requests
 import pandas as pd
-import requests
-from flask import session
 from deep_translator import GoogleTranslator
 
 app = Flask(__name__)
+app.secret_key = "4d760f22493d0e0df77aa8f4375ff517"
 
-# ========== Paths & config ==========
+# ========== Paths ==========
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "crop_model_bundle.pkl")
 PROFIT_PATH = os.path.join(BASE_DIR, "profit_data.csv")
@@ -627,26 +625,23 @@ LINKED_TESTER_FILE = os.path.join(BASE_DIR, "linked_tester_data.csv")
 FEEDBACK_FILE = os.path.join(BASE_DIR, "feedback.csv")
 FARMER_REQUESTS_FILE = os.path.join(BASE_DIR, "farmer_requests.csv")
 
-# Load model and profit data
-# if not os.path.exists(MODEL_PATH):
-#     raise FileNotFoundError(f"Model file not found at {MODEL_PATH}. Place crop_model.pkl there.")
-
-# model = joblib.load(MODEL_PATH)
-
-#TEMPORATY CHANGE
-if joblib and os.path.exists(MODEL_PATH):
-    model = joblib.load(MODEL_PATH)
+# ========== Load model bundle ==========
+if os.path.exists(MODEL_PATH):
+    bundle = joblib.load(MODEL_PATH)
+    model = bundle["model"]
+    scaler = bundle["scaler"]
+    label_encoders = bundle["label_encoders"]
+    feature_columns = bundle["feature_columns"]
 else:
-    model = None   # dummy model for frontend testing
+    model, scaler, label_encoders, feature_columns = None, None, None, None
 
-
+# ========== Load profit dataset ==========
 if os.path.exists(PROFIT_PATH):
     profit_df = pd.read_csv(PROFIT_PATH, encoding="utf-8")
 else:
-   # profit_df = pd.DataFrame(columns=["crop", "estimated_profit"])
-   profit_df = None
+    profit_df = pd.DataFrame()
 
-
+# ========== OpenWeather API ==========
 OPENWEATHER_API_KEY = "eba7a9462af4cfa2bd8c3de9fbd5e887"
 
 
@@ -672,40 +667,6 @@ def fetch_weather_for_location(location: str):
     except Exception:
         return default
 
-def lookup_profit_for_crop(crop_name: str):
-    if profit_df is None or profit_df.empty:
-        return "N/A"
-    row = profit_df[profit_df['crop'].astype(str).str.lower() == str(crop_name).lower()]
-    if not row.empty:
-        try:
-            return int(row['estimated_profit'].values[0])
-        except Exception:
-            return row['estimated_profit'].values[0]
-    return "N/A"
-
-#--------language---------
-app.secret_key="4d760f22493d0e0df77aa8f4375ff517"
-
-def translate_text(text, lang):
-    if not lang or lang == "en":
-        return text
-    try:
-        return GoogleTranslator(source="en", target=lang).translate(text)
-    except Exception:
-        return text
-
-@app.template_filter('translate')
-def translate_filter(text):
-    lang = session.get('language', 'en')
-    return translate_text(text, lang)
-
-def translate_crop_name(crop_name: str, dest_lang: str):
-    try:
-        if not dest_lang or dest_lang == "en":
-            return crop_name
-        return GoogleTranslator(source="en", target=dest_lang).translate(crop_name)
-    except Exception:
-        return crop_name
 
 def save_csv_row(filepath, header, row):
     file_exists = os.path.isfile(filepath)
@@ -715,66 +676,73 @@ def save_csv_row(filepath, header, row):
             writer.writerow(header)
         writer.writerow(row)
 
+
+# ---------- Prediction Logic ----------
+def predict_crops(input_data):
+    """Return top 3 crop predictions"""
+    if model is None:
+        return ["Rice"]
+    input_df = pd.DataFrame([input_data], columns=feature_columns)
+    X_scaled = scaler.transform(input_df)
+    proba = model.predict_proba(X_scaled)[0]
+    top_indices = proba.argsort()[-3:][::-1]
+    return [model.classes_[i] for i in top_indices]
+
+
+def suggest_irrigation(crop, soil_type, root_depth, water_requirement):
+    crop = str(crop).lower()
+    soil_type = str(soil_type).lower()
+
+    if water_requirement == "High" or root_depth == "Deep":
+        return "Drip Irrigation"
+    elif water_requirement == "Medium" and soil_type in ["loamy", "clay"]:
+        return "Sprinkler Irrigation"
+    else:
+        return "Flood Irrigation"
+
+
+def evaluate_crops(top_crops):
+    """Attach profit + irrigation info to each predicted crop"""
+    results = []
+    for crop in top_crops:
+        row = profit_df[profit_df['crop'].str.lower() == crop.lower()]
+        if not row.empty:
+            profit = row.iloc[0].get("Net_Profit_Rs_per_ha", 0)
+            soil = row.iloc[0].get("soil_type", "loamy")
+            root = row.iloc[0].get("root_depth", "Medium")
+            water = row.iloc[0].get("water_requirement", "Medium")
+            irrigation = suggest_irrigation(crop, soil, root, water)
+        else:
+            profit, irrigation = 0, "Standard Irrigation"
+        results.append({"crop": crop, "profit": profit, "irrigation": irrigation})
+
+    # Sort by profit (highest first)
+    results = sorted(results, key=lambda x: x["profit"], reverse=True)
+    return results
+
+
+# ---------- Translation ----------
+def translate_text(text, lang):
+    if not lang or lang == "en":
+        return text
+    try:
+        return GoogleTranslator(source="en", target=lang).translate(text)
+    except Exception:
+        return text
+
+
+@app.template_filter('translate')
+def translate_filter(text):
+    lang = session.get('language', 'en')
+    return translate_text(text, lang)
+
+
 # ---------- Routes ----------
 @app.route("/")
 def index():
     return render_template("index.html")
 
 
-
-#------farmer-report-------
-# @app.route('/farmer_report', methods=['POST'])
-# def farmer_report():
-#     name = request.form.get('name', '').strip()
-#     location = request.form.get('location', '').strip()
-#     language = request.form.get('language', 'en').strip()
-
-#     # Check if report exists
-#     report_path = f"static/reports/{name}_report.html"  # adjust path
-#     if os.path.exists(report_path):
-#         # Report exists, render result.html or redirect to actual report
-#         return render_template("result.html", name=name, location=location, language=language)
-#     else:
-#         # Report does not exist yet
-#         return render_template("check_result.html", name=name)
-
-#------farmer-report-------
-@app.route('/farmer_report', methods=['POST'])
-def farmer_report():
-    name = request.form.get('name', '').strip()
-    location = request.form.get('location', '').strip()
-    language = request.form.get('language', 'en').strip()
-    session['language']=language
-
-    # ✅ Fetch weather here
-    temp, hum, rain = fetch_weather_for_location(location)
-
-    # Check if report exists
-    report_path = f"static/reports/{name}_report.html"  # adjust path
-    if os.path.exists(report_path):
-        # Report exists, render result.html
-        return render_template(
-            "result.html",
-            name=name,
-            location=location,
-            language=language,
-            temperature=temp,
-            humidity=hum,
-            rainfall=rain
-        )
-    else:
-        # Report does not exist yet
-        return render_template(
-            "check_result.html",
-            name=name,
-            temperature=temp,
-            humidity=hum,
-            rainfall=rain
-        )
-
-
-
-#-------------farmer flow----------
 @app.route('/farmer', methods=['GET', 'POST'])
 def farmer():
     if request.method == 'POST':
@@ -782,110 +750,28 @@ def farmer():
         location = request.form.get('location', '').strip()
         phone = request.form.get('phone', '').strip()
         language = request.form.get('language', '').strip()
-        session['language']=language
+        session['language'] = language
 
         header = ['Name', 'Location', 'Phone', 'Language']
         row = [name, location, phone, language]
         save_csv_row(FARMER_REQUESTS_FILE, header, row)
 
-        # Check if report exists
-        report_exists = os.path.exists(os.path.join("templates", "result.html"))  # adjust path
-        return render_template(
-            "thankyou.html",
-            name=name,
-            location=location,
-            phone=phone,
-            language=language,
-            report_exists=report_exists
-        )
+        return render_template("thankyou.html",
+                               name=name, location=location, phone=phone, language=language)
     return render_template("farmer.html")
-    
 
 
-@app.route('/result')
-def result():
-    name = request.args.get('name')
-    phone = request.args.get('phone')
-    location = request.args.get('location')
-    language = request.args.get('language')
-
-    try:
-        df = pd.read_csv(FARMER_REQUESTS_FILE)
-        # check if this farmer exists in tester data
-        matched = df[
-            (df['Name'].astype(str).str.lower() == name.lower()) &
-            (df['Phone'].astype(str).str.lower() == phone.lower()) &
-            (df['Location'].astype(str).str.lower() == location.lower())
-        ]
-    except Exception:
-        matched = pd.DataFrame()  # no data at all
-
-    if not matched.empty:
-        # farmer exists in tester records
-        return render_template("result.html",
-                               name=name,
-                               location=location,
-                               phone=phone,
-                               )
-    else:
-        # farmer not found → show check_result
-        return render_template("check_result.html",
-                               name=name,
-                               location=location,
-                               phone=phone,
-                               )
-
-# @app.route('/result')
-# def result():
-#     name = request.args.get('name')
-#     phone = request.args.get('phone')
-#     location = request.args.get('location')
-#     language = request.args.get('language')
-#     session['language']=language
-#     # Load and display the result for this farmer
-#     report_path = os.path.join("templates","result.html")
-#     if os.path.exists(report_path):
-#         return render_template("result.html",
-#                                name=name,
-#                                location=location,
-#                                phone=phone,
-#                                language=language)
-#     else:
-#         return render_template("check_result.html",
-#                                name=name,
-#                                location=location,
-#                                phone=phone,
-#                                language=language)
-#     return render_template('result.html', name=name,phone=phone, location=location, language=language)
-
-
-# ---------------- FEEDBACK FLOW ----------------
-@app.route('/feedback', methods=['GET', 'POST'])
-def feedback():
-    if request.method == 'POST':
-        name = request.form.get('name')
-        email = request.form.get('email')
-        message = request.form['message']
-        # Save feedback to CSV or database here
-        return redirect(url_for('feedback_submit'))
-    return render_template('feedback.html')
-
-
-@app.route('/feedback_submit')
-def feedback_submit():
-    return render_template('feedback_submit.html')
-
-
-# -------- Tester Flow --------
 @app.route('/tester', methods=['GET', 'POST'])
 def tester():
     if request.method == 'POST':
         try:
+            # Get form inputs
             name = request.form.get('name', '').strip()
             phone = request.form.get('phone', '').strip()
             location = request.form.get('location', '').strip()
             language = request.form.get('language', 'en').strip()
             session['language'] = language
+
             N = float(request.form.get('N', 0))
             P = float(request.form.get('P', 0))
             K = float(request.form.get('K', 0))
@@ -893,108 +779,34 @@ def tester():
             humidity = float(request.form.get('humidity', ''))
             ph = float(request.form.get('ph', ''))
             rainfall = float(request.form.get('rainfall', ''))
-            soil_type = request.form.get('soil_type', '')
-            season = request.form.get('season', '')
-            water_level = request.form.get('water_level', '')
-            fertilizer_required = request.form.get('fertilizer') or request.form.get('fertilizer_required') or ''
-            pest_present = request.form.get('pest') or request.form.get('pest_present') or ''
 
-            # ✅ Predict using ML model if available
-            crop_pred = "Rice"  # fallback
-            profit = "N/A"
-            irrigation = "Standard irrigation method is sufficient."
-            if model:
-                input_data = [[N, P, K, temperature, humidity, ph, rainfall]]
-                crop_pred = model.predict(input_data)[0]
-                #irrigation = micro_irrigation_crops.get(crop_pred.lower(), irrigation)
-                #profit = lookup_profit_for_crop(crop_pred)
+            # Predict top 3 crops
+            input_data = [N, P, K, temperature, humidity, ph, rainfall]
+            top_crops = predict_crops(input_data)
+            crop_results = evaluate_crops(top_crops)
+            most_profitable_crop = crop_results[0]["crop"]
 
-            # ✅ Save submission to CSV
-            header = ['name','phone','location','N','P','K','temperature','humidity',
-                      'ph','rainfall','crop','soil_type','season','water_level',
-                      'fertilizer_required','pest_present']
-            row = [name, phone, location, N, P, K, temperature, humidity, ph, rainfall,
-                   crop_pred, soil_type, season, water_level, fertilizer_required, pest_present]
+            # Save tester submission
+            header = ['name', 'phone', 'location', 'N', 'P', 'K',
+                      'temperature', 'humidity', 'ph', 'rainfall',
+                      'predicted_crops']
+            row = [name, phone, location, N, P, K, temperature, humidity,
+                   ph, rainfall, ", ".join(top_crops)]
             save_csv_row(LINKED_TESTER_FILE, header, row)
 
-             # ✅ Fetch weather info for tester
-            temp_now, hum_now, rain_now = fetch_weather_for_location(location)
-
-            # ✅ Go to success page first
-            return render_template("tester_success.html", name=name, phone=phone, location=location,
-                                   crop=crop_pred, temperature=temp_now,humidity=hum_now, rainfall=rain_now)
+            # Render success
+            return render_template("tester_success.html",
+                                   name=name,
+                                   location=location,
+                                   phone=phone,
+                                   top_crops=crop_results,
+                                   most_profitable=most_profitable_crop)
         except Exception as e:
             return f"Error processing tester form: {e}"
 
     return render_template("tester.html")
 
 
-@app.route('/tester_report', methods=['POST'])
-def tester_report():
-    name = request.form.get('name', '').strip()
-    phone = request.form.get('phone', '').strip()
-    location = request.form.get('location', '').strip()
-    language = request.form.get('language', 'en').strip()
-    session['language'] = language
-    # ✅ Fetch weather info
-    temp_now, hum_now, rain_now = fetch_weather_for_location(location)
-
-    # # Dummy data to simulate tester report
-    # dummy_data = {
-    #     "name": name if name else "Test User",
-    #     "Phno": phone if phone else "1234567890",
-    #     "location": location if location else "Bangalore",
-    #     "N": 60,
-    #     "P": 23,
-    #     "K": 42,
-    #     "temperature": temp_now,
-    #     "humidity": hum_now,
-    #     "ph": 6.5,
-    #     "rainfall": rain_now,
-    #     "soil_type": "Red",
-    #     "season": "Kharif",
-    #     "water_level": "Medium",
-    #     "fertilizer": "Yes",
-    #     "pest": "No",
-    #     "tester_report": "Predicted crop: Rice (Estimated profit: 5000)"
-    # }
-
-    # return render_template("tester_report.html", **dummy_data)
-   
-    df = pd.read_csv(LINKED_TESTER_FILE, encoding='utf-8')
-
-    matched = df[
-        (df['name'].astype(str).str.lower() == name.lower()) &
-        (df['phone'].astype(str).str.lower() == phone.lower()) &
-        (df['location'].astype(str).str.lower() == location.lower())
-    ]
-
-    if matched.empty:
-        return "⚠️ No tester report found."
-
-    last_entry = matched.iloc[-1].to_dict()
-
-    # Build tester report message
-    tester_report_msg = f"Predicted most suitable crop: {last_entry.get('crop', 'Unknown')} (Estimated profit: {lookup_profit_for_crop(last_entry.get('crop', ''))})"
-
-    return render_template("tester_report.html",
-                           name=last_entry.get('name'),
-                           Phno=last_entry.get('phone'),
-                           location=last_entry.get('location'),
-                           N=last_entry.get('N'),
-                           P=last_entry.get('P'),
-                           K=last_entry.get('K'),
-                           ph=last_entry.get('ph'),
-                           temperature=last_entry.get('temperature'),
-                           humidity=last_entry.get('humidity'),
-                           rainfall=last_entry.get('rainfall'),
-                           soil_type=last_entry.get('soil_type'),
-                           water_level=last_entry.get('water_level'),
-                           season=last_entry.get('season'),
-                           fertilizer=last_entry.get('fertilizer_required'),
-                           pest=last_entry.get('pest_present'),
-                           tester_report=tester_report_msg
-                           )
 # ---------- Run ----------
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5000)
